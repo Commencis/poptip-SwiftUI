@@ -9,10 +9,11 @@ let package = Package(
     products: [
         .library(
             name: "PoptipSwiftUI",
-            targets: ["PoptipSwiftUI"])
+            targets: ["PoptipSwiftUI"]
+        )
     ],
     dependencies: [
-        .package(url: "https://github.com/andreamazz/AMPopTip", "4.5.0"..<"4.6.0")
+        .package(url: "https://github.com/andreamazz/AMPopTip", "4.12.0"..<"4.13.0")
     ],
     targets: [
         .target(

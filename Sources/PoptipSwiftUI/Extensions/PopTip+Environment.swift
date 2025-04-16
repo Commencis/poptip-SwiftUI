@@ -53,5 +53,5 @@ public extension EnvironmentValues {
     /// Assign a closure to this property to apply custom configurations to the `PopTip` instance before it is presented. The closure takes a `PopTip` parameter, allowing direct modification of its properties, such as animation settings or additional styling. The closure is marked `@Sendable` to ensure thread safety.
     ///
     /// - Default: An empty closure (`{ _ in }`) that performs no configuration.
-    @Entry var configurePopTip: @Sendable (PopTip) -> Void = { _ in }
+    @Entry var configurePopTip: @MainActor (PopTip) -> Void = { _ in }
 }

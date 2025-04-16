@@ -119,7 +119,7 @@ public extension View {
     ///
     /// - Parameter configure: A closure to customize the `PopTip` instance. Defaults to an empty closure that performs no configuration.
     /// - Returns: A modified view with the updated configuration closure.
-    func configurePopTip(_ configure: @Sendable @escaping (PopTip) -> Void = { _ in }) -> some View {
+    func configurePopTip(_ configure: @MainActor @escaping (PopTip) -> Void = { _ in }) -> some View {
         environment(\.configurePopTip, configure)
     }
 }
